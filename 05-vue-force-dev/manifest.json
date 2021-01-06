@@ -1,0 +1,17 @@
+{
+  "name": "Vue force dev",
+  "description": "强制开启线上vue devtools",
+  "version": "1.0",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "injected.js"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}

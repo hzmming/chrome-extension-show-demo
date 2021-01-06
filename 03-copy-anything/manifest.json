@@ -1,0 +1,17 @@
+{
+  "name": "Copy anything",
+  "description": "demo",
+  "version": "1.0",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://wenku.baidu.com/view/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}
